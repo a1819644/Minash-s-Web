@@ -221,7 +221,7 @@ section {
 /* about */
 
 .about {
-    min-height: 100vh;
+    min-height: 10vh;
     display: grid;
     place-items: center;
 }
@@ -277,7 +277,7 @@ section {
 
 /* service */
 .services {
-    min-height: 100vh;
+    min-height: 10vh;
     display: grid;
     place-items: center;
 }
