@@ -52,6 +52,26 @@
 
         </div>
     </section>
+    <section class="services">
+        <div class="row">
+            <div class="imgWrapper">
+                <img id="mainImage" src="images/Services/Cladding.jpg" alt="">
+            </div>
+            <div class="contentWrapper">
+                <div class="content">
+                    <h2>Our Expertises</h2>
+                    <ul>
+                        <li data-img="images/Services/Framing.jpg">Framing.</li>
+                        <li data-img="images/Services/Lockup.jpg">Lockup.</li>
+                        <li data-img="images/Services/Fixing.jpg">Fixing.</li>
+                        <li data-img="images/Services/Dacking.jpg">Dacking.</li>
+                        <li data-img="images/Services/Parabola.jpg">Parabola.</li>
+                        <li data-img="images/Services/Cladding.jpg">Cladding.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div id="blogs">
         <h4>Blogs</h4>
@@ -115,6 +135,25 @@
     <div class="footer-container">
         <p> Copyright &#169; 2024 Company name</p>
     </div>
+    <!-- script for services or our expertise -->
+    <script>
+        document.querySelectorAll('.content li').forEach(item => {
+            item.addEventListener('mouseover', event => {
+                const newSrc = event.target.getAttribute('data-img');
+                document.getElementById('mainImage').setAttribute('src', newSrc);
+            });
+
+            item.addEventListener('mouseout', () => {
+                document.getElementById('mainImage').setAttribute('src', defaultSrc);
+            });
+        });
+
+        document.getElementById('mainImage').addEventListener('click', () => {
+                    const defaultSrc = document.getElementById('mainImage').getAttribute('data-default');
+                    document.getElementById('mainImage').setAttribute('src', 'images/Service/Framing.jpg');
+        })
+    </script>
+
     <script src="main.js" type="text/javascript">
 
     </script>

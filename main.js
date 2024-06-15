@@ -6,3 +6,4 @@ const menuBtn = document.querySelector(".menu-btn");
             menuBtn.classList.toggle("active");
             navigation.classList.toggle("active");
         });
+    
