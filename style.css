@@ -107,16 +107,6 @@ section {
     margin-bottom: 65px;
 }
 
-.home .content a {
-    background: #fff;
-    padding: 15px 35px;
-    color: #1680AC;
-    font-size: 1.1em;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 2px;
-}
-
 .home .imgSlider {
     z-index: 000;
     position: absolute;
@@ -211,7 +201,7 @@ section {
     }
 
     .menu-btn {
-        background: url(menu_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
+        background: url(images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -222,7 +212,7 @@ section {
 
     .menu-btn.active {
         z-index: 999;
-        background: url(close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
+        background: url(images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: center;
         transition: 0.3s ease;
     }
