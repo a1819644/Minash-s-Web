@@ -52,6 +52,35 @@
 
         </div>
     </section>
+
+    <!-- Project page -->
+    <section class="container">
+        <div class="gallery-wrap">
+            <div class="gallery">
+                <div>
+                    <span><img src="images/projects/3.jpg" alt=""></span>
+                    <span><img src="images/projects/2.jpg" alt=""></span>
+                    <span><img src="images/projects/4.jpg" alt=""></span>
+                    <span><img src="images/projects/1.jpg" alt=""></span>
+                    <span><img src="images/projects/2.jpg" alt=""></span>
+                </div>
+                <div>
+                    <span><img src="images/projects/5.jpg" alt=""></span>
+                    <span><img src="images/projects/6.png" alt=""></span>
+                    <span><img src="images/projects/7.jpg" alt=""></span>
+                    <span><img src="images/projects/1.jpg" alt=""></span>
+                </div>
+            </div>
+           
+        </div>
+        <div class="btn">
+            <img src="images/projects/back.png" id="backBtn">
+            <img src="images/projects/next.png" id="nextBtn">
+        </div>
+       
+    </section>
+
+     <!-- Services page -->
     <section class="services">
         <div class="row">
             <div class="imgWrapper">
@@ -72,56 +101,60 @@
             </div>
         </div>
     </section>
+    <hr>
+    
+ <!-- Blogs page -->
+ <div id="blogs">
+    <h2>Blogs</h2>
+</div>
+<section class="post-container">
+    <!-- blog 1 -->
+    <div class="post-box">
 
-    <div id="blogs">
-        <h4>Blogs</h4>
+        <div class="profile">
+            <img src="images/profile/1.jpg" alt="" class="profile-img">
+            <span class="profile-name">Marques Brown</span>
+        </div>
+        <a href="#" class="post-title">
+            How To Create ux Design wit Adobe XD
+        </a>
+        <span class="post-date">1 May 2024</span>
+        <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
+            aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
+            accusantium quis laudantium harum eaque assumenda. Facere?</p>
+
     </div>
-    <section class="post-container">
-        <!-- blog 1 -->
-        <div class="post-box">
-            <div class="profile">
-                <img src="images/profile/1.jpg" alt="" class="profile-img">
-                <span class="profile-name">Marques Brown</span>
-            </div>
-            <a href="#" class="post-title">
-                How To Create ux Design wit Adobe XD
-            </a>
-            <span class="post-date">1 May 2024</span>
-            <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
-                aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
-                accusantium quis laudantium harum eaque assumenda. Facere?</p>
+    <!-- blog 2 -->
+    <div class="post-box">
+        <div class="profile">
+            <img src="images/profile/2.jpg" alt="" class="profile-img">
+            <span class="profile-name">William smith</span>
         </div>
-        <!-- blog 2 -->
-        <div class="post-box">
-            <div class="profile">
-                <img src="images/profile/2.jpg" alt="" class="profile-img">
-                <span class="profile-name">William smith</span>
-            </div>
-            <a href="blogs-pages.html" class="post-title">
-                How To Create ux Design wit Adobe XD
-            </a>
-            <span class="post-date">1 May 2024</span>
-            <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
-                aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
-                accusantium quis laudantium harum eaque assumenda. Facere?</p>
+        <a href="blogs-pages.html" class="post-title">
+            How To Create ux Design wit Adobe XD
+        </a>
+        <span class="post-date">1 May 2024</span>
+        <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
+            aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
+            accusantium quis laudantium harum eaque assumenda. Facere?</p>
 
+    </div>
+    <!-- blog 3-->
+    <div class="post-box">
+        <div class="profile">
+            <img src="images/profile/3.jpg" alt="" class="profile-img">
+            <span class="profile-name">John Doe</span>
         </div>
-        <!-- blog 3-->
-        <div class="post-box">
-            <div class="profile">
-                <img src="images/profile/3.jpg" alt="" class="profile-img">
-                <span class="profile-name">John Doe</span>
-            </div>
-            <a href="blogs-pages.html" class="post-title">
-                How To Create Best ux Design wit Adobe XD
-            </a>
-            <span class="post-date">1 May 2024</span>
-            <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
-                aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
-                accusantium quis laudantium harum eaque assumenda. Facere?</p>
+        <a href="blogs-pages.html" class="post-title">
+            How To Create Best ux Design wit Adobe XD
+        </a>
+        <span class="post-date">1 May 2024</span>
+        <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
+            aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
+            accusantium quis laudantium harum eaque assumenda. Facere?</p>
 
-        </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <div class="footer-container">
@@ -149,8 +182,8 @@
         });
 
         document.getElementById('mainImage').addEventListener('click', () => {
-                    const defaultSrc = document.getElementById('mainImage').getAttribute('data-default');
-                    document.getElementById('mainImage').setAttribute('src', 'images/Service/Framing.jpg');
+            const defaultSrc = document.getElementById('mainImage').getAttribute('data-default');
+            document.getElementById('mainImage').setAttribute('src', 'images/Service/Framing.jpg');
         })
     </script>
 
