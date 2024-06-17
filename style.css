@@ -283,17 +283,17 @@ section {
 
 .container {
     background: #222;
-    height: 700px;
+    height: 500px;
 }
 
 .gallery {
-    width: 105%;
+    width: 100%;
     display: flex;
     overflow: scroll;
 }
 
 .gallery div {
-    width: 150%;
+    width: 100%;
     display: flex;
     grid-template-columns: auto auto auto auto;
     grid-gap: 60px;
