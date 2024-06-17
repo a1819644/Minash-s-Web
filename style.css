@@ -307,24 +307,25 @@ section {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
-    /* position: relative; */
+    position: relative;
     /* Ensure relative positioning for proper z-index handling */
 }
 
 .slide-box {
-    flex: 0 0 40%;
+    flex: 0 0 50%;
     /* Each box takes up one-fourth of the container */
-    padding: 0 40px;
+    padding: 0 50px;
     /* Adjust spacing between slides */
     box-sizing: border-box;
-    /* position: relative; */
+    position: relative;
     /* Ensure relative positioning for proper z-index handling */
 }
 
 .slide {
-    width: 90%;
+    width: 120%;
     /* to do for height  */
-    height: 500px;
+    height: 1000px;
+    
     /* Ensure slide takes up full height of parent */
     background-size: 85%;
     background-position: center;
@@ -605,26 +606,7 @@ section {
     }
 
     /* project */
-    .container {
-        background: #222;
-        height: 550px;
-    }
-
-    .gallery {
-        width: 100%;
-        display: flex;
-        overflow: scroll;
-    }
-
-    #backBtn,
-    #nextBtn {
-        width: 35px;
-    }
-
-    #backBtn:hover,
-    #nextBtn:hover {
-        transform: scale(1.1);
-    }
+    
 }
 
 @media (max-width:799px) {
@@ -672,24 +654,7 @@ section {
     }
 
     /* project */
-    .container {
-        background: #222;
-        height: 400px;
-    }
-
-    .gallery {
-        display: flex;
-        overflow: scroll;
-    }
-
-    .gallery div {
-        width: 150%;
-    }
-
-    .gallery div {
-        margin: -60px;
-        flex: none;
-    }
+ 
 }
 
     @media(max-width: 575px) {
@@ -729,23 +694,7 @@ section {
         }
 
         /* project */
-        .container {
-            background: #222;
-            height: 300px;
-        }
-
-        .gallery div {
-            width: 150%;
-        }
-
-        .gallery div {
-            margin: -60px;
-            flex: none;
-        }
-
-        .btn {
-            margin-bottom: 5px;
-        }
+    
 
         /* footer */
         footer .copyright {

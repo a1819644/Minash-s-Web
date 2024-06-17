@@ -9,6 +9,7 @@ const menuBtn = document.querySelector(".menu-btn");
         });
     
 //Project menu
+
 let currentSlide = 0;
 const totalSlides = document.querySelectorAll('.slide-box').length;
 const visibleSlides = 3; // Number of slides to show at a time
@@ -48,3 +49,4 @@ function updateButtonVisibility() {
 // Initial update of button visibility
 updateButtonVisibility();
 
+//Service menu
