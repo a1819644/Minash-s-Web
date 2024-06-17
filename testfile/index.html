@@ -9,8 +9,7 @@
 </head>
 
 <body>
-    <div class="slider-container">
-        <button class="nav prev" onclick="showPrevSlide()">&#10094;</button>
+    <div class="slider-container">  
         <div class="slider">
             <div class="slides">
                 <div class="slide-box">
@@ -43,7 +42,10 @@
                 <!-- Add more images in similar structure -->
             </div>
         </div>
-        <button class="nav next" onclick="showNextSlide()">&#10095;</button>
+        <div class="buttons">
+            <span class="prev" onclick="showPrevSlide()"></span>
+            <span class="next" onclick="showNextSlide()"></span>
+        </div>
     </div>
 
     <script src="script.js"></script>
