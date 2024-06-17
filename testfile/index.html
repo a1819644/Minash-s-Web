@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="slider-container">  
     <div class="slider-container">
         <div class="portfolio-heading">Portfolio</div>
         <h3 class="title">An Impressive Track Record</h3>
@@ -45,7 +46,10 @@
                 <!-- Add more images in similar structure -->
             </div>
         </div>
-        <button class="nav next" onclick="showNextSlide()">&#10095;</button>
+        <div class="buttons">
+            <span class="prev" onclick="showPrevSlide()"></span>
+            <span class="next" onclick="showNextSlide()"></span>
+        </div>
     </div>
 
     <script src="script.js"></script>
