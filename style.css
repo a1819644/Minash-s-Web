@@ -293,7 +293,7 @@ section {
 }
 
 .gallery div {
-    width: 150%;
+    width: 80%;
     display: flex;
     grid-template-columns: auto auto auto auto;
     grid-gap: 60px;
@@ -390,7 +390,6 @@ section {
     padding-bottom: 25px;
 }
 
-/* from here */
 .services .row .contentWrapper ul {
     list-style-type: disc;
     /* or none, if you prefer without bullets */

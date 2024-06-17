@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+        /* Adjust to cover half of the screen */
+    max-width: 100%;
+    /* height: 80vh; */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(133, 133, 133, 0.1);
+    background-color: black;
+    /* margin: auto; */
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    
+    position: relative;
+    /* Ensure relative positioning for proper z-index handling */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    /* position: relative; */
+    /* Ensure relative positioning for proper z-index handling */
+}
+
+.slide-box {
+    flex: 0 0 40%;
+    /* Each box takes up one-fourth of the container */
+    padding: 0 40px;
+    /* Adjust spacing between slides */
+    box-sizing: border-box;
+    /* position: relative; */
+    /* Ensure relative positioning for proper z-index handling */
+}
+
+.slide {
+    width: 90%;
+    height: 1000px;
+    /* Ensure slide takes up full height of parent */
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* display: flex; */
+    /* Use flexbox to center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    /* max-height: 90%; */
+    /* Ensure slide does not exceed parent height */
+    padding: 40px;
+    /* Adjust padding as needed */
+    box-sizing: border-box
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    /* Adjust button text color */
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    outline: none;
+    z-index: 1;
+    /* Ensure buttons are above slides */
+}
+
+.nav.prev {
+    left: 10px;
+}
+
+.nav.next {
+    right: 10px;
+}
+
+.nav:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
