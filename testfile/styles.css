@@ -11,14 +11,12 @@ body {
 .slider-container {
     position: relative;
     width: 100%;
-    /* Adjust to cover half of the screen */
-    max-width: 100%;
+    max-width: 100%; /* Adjust to cover entire width */
     overflow: hidden;
-    height: 80%;
+    height: 80%; /* Adjust as needed */
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(133, 133, 133, 0.1);
     background-color: black;
-    /* margin: auto; */
 }
 
 .slider {
@@ -33,70 +31,33 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
+    position: relative; 
+
     /* position: relative; */
     /* Ensure relative positioning for proper z-index handling */
 }
 
 .slide-box {
-    flex: 0 0 40%;
-    /* Each box takes up one-fourth of the container */
-    padding: 0 40px;
-    /* Adjust spacing between slides */
+    flex: 0 0 40%; /* Each box takes up 40% of the slider width */
+    padding: 0 20px; /* Adjust spacing between slides */
     box-sizing: border-box;
-    /* position: relative; */
-    /* Ensure relative positioning for proper z-index handling */
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;  
+    height: 300px; /* Height of each slide box */
+    position: relative; /* Ensure positioning context for captions */
 }
 
 .slide {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-        /* -webkit-user-select: none; */
-        /* -moz-user-select: none; */
-        /* -ms-user-select: none; */
-        /* user-select: none; */
-        /* -webkit-touch-callout: none; */
-        /* -khtml-user-select: none; */
-        /* -ms-touch-action: pan-y; */
-        /* touch-action: pan-y; */
-        /* -webkit-tap-highlight-color: transparent; */
-
-    width: 90%;
-    /* to do for height  */
-    height: 500px;
-    /* Ensure slide takes up full height of parent */
-    background-size: 85%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    /* Use flexbox to center content vertically */
-    justify-content: center;
-    /* Center content horizontally */
-    align-items: center;
-    /* Center content vertically */
-    max-height: 90%;
-    /* Ensure slide does not exceed parent height */
-    /* padding: 40px; */
-    /* Adjust padding as needed */
-    /* box-sizing: border-box */
 }
 
 
-.buttons {
 .portfolio-heading {
-    /* top: 10px;
-    left: 100%;
-    margin: 0 0 7px;
-    font-family: Raleway, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 35px;
-    letter-spacing: .02em;
-    text-transform: uppercase;
-        color: #9a9a95;
-         */
-
     top: 10px;
     right: 60%;
     font-family: Raleway, Helvetica, sans-serif;
