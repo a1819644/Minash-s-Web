@@ -12,7 +12,7 @@ const menuBtn = document.querySelector(".menu-btn");
 
 $('.slides').slick({
     centerMode: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     centerPadding: '0px',
     responsive: [
         {
