@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -54,46 +55,45 @@
     </section>
 
     <!-- Projects pages -->
-    <div class="slider-container">  
-        <div class="slider">
-            <div class="slides">
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('images/projects/image1.jpg');"></div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('images/projects/image2.jpg');"></div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('images/projects/image3.jpg');"></div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('images/projects/image1.jpg');"></div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('images/projects/image2.jpg');"></div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('images/projects/image3.jpg');"></div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('images/projects/image1.jpg');"></div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('images/projects/image2.jpg');"></div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('images/projects/image3.jpg');"></div>
-                </div>
-                <!-- Add more images in similar structure -->
+    <div class="section-track_record">
+        <div class="section-track_record"> 
+            <div class="content-wrapper">
+                <h4 class="subtitle">Portfolio</h4>
+                <h3 class="title">
+                    An Impressive 
+                    <!-- <br> -->
+                    Track Record
+                </h3>
             </div>
-        </div>
-        <div class="buttons">
-            <span class="prev" onclick="showPrevSlide()"></span>
-            <span class="next" onclick="showNextSlide()"></span>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide-box">
+                        <div class="slide" style="background-image: url('./images/images/image1.jpg');"></div>
+                        <img src="images/images/image1.jpg" alt="Image 1" style="display: none;">
+                        <div class="caption">Caption for Image 1</div>
+                    </div>
+                    <div class="slide-box">
+                        <div class="slide" style="background-image: url('./images/images/image2.jpg');"></div>
+                        <img src="/images/images/image2.jpg" alt="Image 2" style="display: none;">
+                        <div class="caption">Caption for Image 2</div>
+                    </div>
+                    <div class="slide-box">
+                        <div class="slide" style="background-image: url('./images/images/image3.jpg');"></div>
+                        <img src="/images/images/image3.jpg" alt="Image 3" style="display: none;">
+                        <div class="caption">Caption for Image 3</div>
+                    </div>
+                    <div class="slide-box">
+                        <div class="slide" style="background-image: url('./images/images/image4.jpg');"></div>
+                        <img src="/images/image4.jpg" alt="Image 4" style="display: none;">
+                        <div class="caption">Caption for Image 4</div>
+                    </div>
+                    <!-- Add more images with captions -->
+                </div>
+            </div>
         </div>
     </div>
 
-     <!-- Services page -->
+    <!-- Services page -->
     <section class="services">
         <div class="row">
             <div class="imgWrapper">
@@ -115,89 +115,119 @@
         </div>
     </section>
     <hr>
-    
- <!-- Blogs page -->
- <div id="blogs">
-    <h2>Blogs</h2>
-</div>
-<section class="post-container">
-    <!-- blog 1 -->
-    <div class="post-box">
 
-        <div class="profile">
-            <img src="images/profile/1.jpg" alt="" class="profile-img">
-            <span class="profile-name">Marques Brown</span>
-        </div>
-        <a href="#" class="post-title">
-            How To Create ux Design wit Adobe XD
-        </a>
-        <span class="post-date">1 May 2024</span>
-        <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
-            aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
-            accusantium quis laudantium harum eaque assumenda. Facere?</p>
-
+    <!-- Blogs page -->
+    <div id="blogs">
+        <h2>Blogs</h2>
     </div>
-    <!-- blog 2 -->
-    <div class="post-box">
-        <div class="profile">
-            <img src="images/profile/2.jpg" alt="" class="profile-img">
-            <span class="profile-name">William smith</span>
-        </div>
-        <a href="blogs-pages.html" class="post-title">
-            How To Create ux Design wit Adobe XD
-        </a>
-        <span class="post-date">1 May 2024</span>
-        <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
-            aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
-            accusantium quis laudantium harum eaque assumenda. Facere?</p>
+    <section class="post-container">
+        <!-- blog 1 -->
+        <div class="post-box">
 
-    </div>
-    <!-- blog 3-->
-    <div class="post-box">
-        <div class="profile">
-            <img src="images/profile/3.jpg" alt="" class="profile-img">
-            <span class="profile-name">John Doe</span>
-        </div>
-        <a href="blogs-pages.html" class="post-title">
-            How To Create Best ux Design wit Adobe XD
-        </a>
-        <span class="post-date">1 May 2024</span>
-        <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
-            aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
-            accusantium quis laudantium harum eaque assumenda. Facere?</p>
+            <div class="profile">
+                <img src="images/profile/1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+            <a href="#" class="post-title">
+                How To Create ux Design wit Adobe XD
+            </a>
+            <span class="post-date">1 May 2024</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
+                aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
+                accusantium quis laudantium harum eaque assumenda. Facere?</p>
 
-    </div>
-</section>
+        </div>
+        <!-- blog 2 -->
+        <div class="post-box">
+            <div class="profile">
+                <img src="images/profile/2.jpg" alt="" class="profile-img">
+                <span class="profile-name">William smith</span>
+            </div>
+            <a href="blogs-pages.html" class="post-title">
+                How To Create ux Design wit Adobe XD
+            </a>
+            <span class="post-date">1 May 2024</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
+                aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
+                accusantium quis laudantium harum eaque assumenda. Facere?</p>
+
+        </div>
+        <!-- blog 3-->
+        <div class="post-box">
+            <div class="profile">
+                <img src="images/profile/3.jpg" alt="" class="profile-img">
+                <span class="profile-name">John Doe</span>
+            </div>
+            <a href="blogs-pages.html" class="post-title">
+                How To Create Best ux Design wit Adobe XD
+            </a>
+            <span class="post-date">1 May 2024</span>
+            <p class="post-decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam ipsa
+                aspernatur, autem quidem culpa nulla quos, nobis fugiat earum cupiditate, veritatis explicabo
+                accusantium quis laudantium harum eaque assumenda. Facere?</p>
+
+        </div>
+    </section>
+    <hr>
 
     <!-- Footer -->
-    <div class="footer-container">
+    <!-- <div class="footer-container">
         <div class="social">
             <a href="#"><i class="bx fa fa-facebook"></i></a>
             <a href="#"><i class="bx fa fa-twitter"></i></a>
             <a href="#"><i class="bx fa fa-instagram"></i></a>
             <a href="#"><i class="bx fa fa-linkedin"></i></a>
         </div>
-    </div>
-    <div class="footer-container">
+    </div> -->
+    <footer>
+        <div class="container">
+            <div class="sec contactus">
+                <h2>Contact Us</h2>
+                <div class="sec quicklinks">
+                    <h4>Office</h4>
+                    <ul>
+                        <li><a href="#">Jackson.Wyoming</a></li>
+                        <li><a href="#">Alpine.Wyoming</a></li>
+                        <li><a href="#">Driggs.Idaho</a></li>
+                        <li><a href="#">Park city.Utah</a></li>
+                        <li><a href="#">Stowe.Vermont</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sec quicklinks">
+                <h4>Careers</h4>
+                <div class="sec quicklinks">
+                    <p>Interested in a career at Company name? Visit our Careers page.</p>
+                </div>
+            </div>
+            <div class="footer-container">
+                <div class="sec quicklinks">
+                    <h4>Social</h4>
+                    <div class="sci">
+                        <a href="#"><i class="bx fa fa-facebook"></i></a>
+                        <a href="#"><i class="bx fa fa-twitter"></i></a>
+                        <a href="#"><i class="bx fa fa-instagram"></i></a>
+                        <a href="#"><i class="bx fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <hr>
+    <div class="footer-copyright">
         <p> Copyright &#169; 2024 Company name</p>
     </div>
+
     <!-- script for services or our expertise -->
+    
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"> </script>
     <script>
-        document.querySelectorAll('.content li').forEach(item => {
-            item.addEventListener('mouseover', event => {
-                const newSrc = event.target.getAttribute('data-img');
-                document.getElementById('mainImage').setAttribute('src', newSrc);
-            });
-
-            item.addEventListener('mouseout', () => {
-                document.getElementById('mainImage').setAttribute('src', defaultSrc);
-            });
-        });
-
-        document.getElementById('mainImage').addEventListener('click', () => {
-            const defaultSrc = document.getElementById('mainImage').getAttribute('data-default');
-            document.getElementById('mainImage').setAttribute('src', 'images/Service/Framing.jpg');
-        })
+  
     </script>
 
     <script src="main.js" type="text/javascript">

@@ -12,6 +12,11 @@ h2 {
     line-height: 54px;
     color: #222;
 }
+ h3, h4 {
+    margin: 0 0 25px;
+    font-weight: 400;
+    font-family: Canela, Georgia, serif;
+}
 
 header {
     z-index: 999;
@@ -282,67 +287,147 @@ section {
 /* Projects */
 
 
-.slider-container {
-    position: relative;
-    width: 100%;
-        /* Adjust to cover half of the screen */
-    max-width: 100%;
-    /* height: 80vh; */
+.section-track_record {
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(133, 133, 133, 0.1);
-    background-color: black;
-    /* margin: auto; */
+    padding: 50px 0 115px;
+    color: #fff;
+    background-color: #000;
+    background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% 100%;
 }
 
-.slider {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    
+/* title and subtitle */
+
+.section-track_record .content-wrapper .subtitle {
+    margin: 0 0 7px;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 35px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #9a9a95;
+}
+
+.section-track_record .content-wrapper .title {
     position: relative;
-    /* Ensure relative positioning for proper z-index handling */
+    margin: 0;
+    padding-top: 17px;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: .02em;
+    text-transform: capitalize;
+}
+.section-track_record .content-wrapper .title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 44px;
+    border-bottom: 2px solid #808081;
 }
 
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-    /* position: relative; */
-    /* Ensure relative positioning for proper z-index handling */
-}
 
-.slide-box {
-    flex: 0 0 40%;
-    /* Each box takes up one-fourth of the container */
-    padding: 0 40px;
-    /* Adjust spacing between slides */
-    box-sizing: border-box;
-    /* position: relative; */
-    /* Ensure relative positioning for proper z-index handling */
-}
+/* .content-wrapper */
 
 .slide {
-    width: 90%;
-    /* to do for height  */
-    height: 500px;
-    /* Ensure slide takes up full height of parent */
-    background-size: 85%;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* display: flex; */
-    /* Use flexbox to center content vertically */
-    justify-content: center;
-    /* Center content horizontally */
-    align-items: center;
-    /* Center content vertically */
-    /* max-height: 90%; */
-    /* Ensure slide does not exceed parent height */
-    padding: 40px;
-    /* Adjust padding as needed */
-    box-sizing: border-box
+    position: relative;
+    padding: 0 80px 65px;
 }
 
-.buttons {
+.section-track_record .content-wrapper {
+    width: 100%;
+    max-width: 952px;
+    margin: 0 auto 60px;
+}
+.slides .slick-track {
+    position: relative;
+    padding: 0 75px 65px;
+}
+.slide {
+    height: 500px; /* Set a fixed height for the slides */
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.slick-slide {
+    margin: 0 60px; /* Adjust this value to change the horizontal space between slides */
+
+}
+
+.slick-list {
+    margin: 0 -60px; /* Negative margin to offset the slide margin */
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #333 !important;
+}
+.caption {
+    text-align: left !important;
+    color: #d9d9d9 !important;
+    font-size: 16px !important;
+    bottom: 0 !important;
+    padding-top: 35px;
+    /* box-sizing: border-box !important; */
+    margin: 0 30px;
+    height: 65px;
+    overflow: hidden;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: .02em;
+}
+
+
+/* buttons */
+.slides .slick-arrow.slick-prev {
+    transform: scaleX(-1);
+}
+.slides .slick-arrow.slick-next {
+    right: 135px;
+    transform: scaleX(1);
+}
+.slides .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    text-indent: -99999em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: inherit;
+    font-size: inherit;
+    line-height: normal;
+    background: #333;
+    -webkit-appearance: none;
+    cursor: pointer;
+    z-index: 20;
+}
+.slides .slick-arrow:after {
+    content: "";
+    width: 6px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: url(https://www.newwestbc.com/wp-content/themes/new-west/images/slider-arrow.svg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+/* .buttons {
     position: absolute;
     bottom: 15px;
     display: flex;
@@ -381,7 +466,7 @@ section {
 }
 .buttons span:active{
     opacity: 0.5;
-}
+} */
 
 
 /* service */
@@ -563,22 +648,79 @@ section {
 
 /* footer */
 
-.footer-container {
-    padding: 15px;
-    text-align: center;
+footer .container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 50px;
+    margin: auto 47px auto 65px;
+}
+footer .container .sec h4{
+    position: relative;
+    color: #333;
+    font-weight: 600;
+    padding: 25px 0 0 ;
+    margin-bottom: 15px;
 }
 
-.footer-container p {
-    color: #423434;
-    font-size: 15px;
-    font-family: Inter;
-    font-style: italic;
-    font-weight: 500;
-    word-wrap: break-word
+footer .container .quicklinks{
+    position: relative;
 }
+footer .container .quicklinks ul li{
+    list-style: none;
+}
+footer .container .quicklinks ul li a{
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+footer .container .quicklinks p{
+    color: #555;
+}
+.footer-container{
 
-.social {
+    margin: 25px  60px;
+}
+footer .container .sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+}
+footer .container .sci{
+    list-style: none;
+}
+footer .container .sci a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #333;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+footer .container .sci a i{
+    color: #fff;
+    font-size: 20px;
+}
+.sci .bx:hover {
+    color: #857c7c;
+    transition: 0.3s all linear;
+} 
+
+/* .social {
+    display: flex;
+    position: relative;
     justify-content: space-between;
+}
+.social a {
+    padding: 5px;
 }
 
 .social .bx {
@@ -589,6 +731,20 @@ section {
 .social .bx:hover {
     color: #e81e1e;
     transition: 0.3s all linear;
+} */
+
+.footer-copyright {
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-copyright p {
+    color: #423434;
+    font-size: 15px;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 500;
+    word-wrap: break-word
 }
 
 
@@ -605,26 +761,7 @@ section {
     }
 
     /* project */
-    .container {
-        background: #222;
-        height: 550px;
-    }
-
-    .gallery {
-        width: 100%;
-        display: flex;
-        overflow: scroll;
-    }
-
-    #backBtn,
-    #nextBtn {
-        width: 35px;
-    }
-
-    #backBtn:hover,
-    #nextBtn:hover {
-        transform: scale(1.1);
-    }
+    
 }
 
 @media (max-width:799px) {
@@ -672,24 +809,7 @@ section {
     }
 
     /* project */
-    .container {
-        background: #222;
-        height: 400px;
-    }
-
-    .gallery {
-        display: flex;
-        overflow: scroll;
-    }
-
-    .gallery div {
-        width: 150%;
-    }
-
-    .gallery div {
-        margin: -60px;
-        flex: none;
-    }
+ 
 }
 
     @media(max-width: 575px) {
@@ -729,23 +849,7 @@ section {
         }
 
         /* project */
-        .container {
-            background: #222;
-            height: 300px;
-        }
-
-        .gallery div {
-            width: 150%;
-        }
-
-        .gallery div {
-            margin: -60px;
-            flex: none;
-        }
-
-        .btn {
-            margin-bottom: 5px;
-        }
+    
 
         /* footer */
         footer .copyright {
