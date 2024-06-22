@@ -13,6 +13,9 @@ const menuBtn = document.querySelector(".menu-btn");
 $('.slides').slick({
     centerMode: true,
     slidesToShow: 3,
+    arrows: false, /*removed the arrow*/
+    autoplay: true,
+    autoplaySpeed: 2000,
     centerPadding: '0px',
     responsive: [
         {
@@ -35,6 +38,7 @@ $('.slides').slick({
         }
     ]
 });
+
 
 //Service menu
 

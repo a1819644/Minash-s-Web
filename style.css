@@ -12,7 +12,9 @@ h2 {
     line-height: 54px;
     color: #222;
 }
- h3, h4 {
+
+h3,
+h4 {
     margin: 0 0 25px;
     font-weight: 400;
     font-family: Canela, Georgia, serif;
@@ -256,6 +258,7 @@ section {
     letter-spacing: .02em;
     text-transform: capitalize;
 }
+
 .section-track_record .content-wrapper .title:before {
     content: "";
     position: absolute;
@@ -279,12 +282,15 @@ section {
     max-width: 952px;
     margin: 0 auto 60px;
 }
+
 .slides .slick-track {
     position: relative;
     padding: 0 75px 65px;
 }
+
 .slide {
-    height: 500px; /* Set a fixed height for the slides */
+    height: 500px;
+    /* Set a fixed height for the slides */
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -292,18 +298,21 @@ section {
 }
 
 .slick-slide {
-    margin: 0 60px; /* Adjust this value to change the horizontal space between slides */
+    margin: 0 60px;
+    /* Adjust this value to change the horizontal space between slides */
 
 }
 
 .slick-list {
-    margin: 0 -60px; /* Negative margin to offset the slide margin */
+    margin: 0 -60px;
+    /* Negative margin to offset the slide margin */
 }
 
 .slick-prev:before,
 .slick-next:before {
     color: #333 !important;
 }
+
 .caption {
     text-align: left !important;
     color: #d9d9d9 !important;
@@ -324,10 +333,12 @@ section {
 .slides .slick-arrow.slick-prev {
     transform: scaleX(-1);
 }
+
 .slides .slick-arrow.slick-next {
     right: 135px;
     transform: scaleX(1);
 }
+
 .slides .slick-arrow {
     position: absolute;
     bottom: 0;
@@ -347,6 +358,7 @@ section {
     cursor: pointer;
     z-index: 20;
 }
+
 .slides .slick-arrow:after {
     content: "";
     width: 6px;
@@ -361,7 +373,7 @@ section {
     background-size: 100% 100%;
 }
 
-/* .buttons {
+.buttons {
     position: absolute;
     bottom: 15px;
     display: flex;
@@ -370,7 +382,8 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
-.buttons span{
+
+.buttons span {
     position: relative;
     width: 50px;
     height: 50px;
@@ -382,11 +395,12 @@ section {
     border-radius: 50%;
 }
 
-.buttons span:hover{
+.buttons span:hover {
     background-color: rgba(70, 69, 69, 0.7);
     opacity: 0.5;
 }
-.buttons span::before{
+
+.buttons span::before {
     content: '';
     position: absolute;
     width: 5px;
@@ -395,12 +409,14 @@ section {
     border-left: 4px solid #fff;
     transform: rotate(315deg) translate(2px, 2px);
 }
-.buttons span:nth-child(2)::before{
+
+.buttons span:nth-child(2)::before {
     transform: rotate(135deg) translate(2px, 2px);
 }
-.buttons span:active{
+
+.buttons span:active {
     opacity: 0.5;
-} */
+}
 
 
 /* service */
@@ -507,10 +523,10 @@ section {
     justify-content: center;
     gap: 1.5rem;
     background-color: #000;
-        background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 100% 100%;
+    background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% 100%;
 }
 
 .post-box {
@@ -519,10 +535,10 @@ section {
     padding: 25px;
     border-radius: 0.5rem;
     background-color: #87bee3;
-        background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 100% 100%;
+    background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% 100%;
 }
 
 .post-img {
@@ -587,6 +603,7 @@ section {
     font-size: 0.82rem;
     font-weight: 500;
 }
+
 button.normal {
     font-size: 14px;
     font-weight: 350;
@@ -600,6 +617,7 @@ button.normal {
     outline: none;
     transition: 0.2s;
 }
+
 button a {
     position: relative;
     color: #fff;
@@ -614,7 +632,7 @@ button:hover {
 
 /* footer */
 
-footer .container{
+footer .container {
     position: relative;
     width: 100%;
     height: auto;
@@ -626,42 +644,50 @@ footer .container{
     padding: 50px;
     margin: auto 47px auto 65px;
 }
-footer .container .sec h4{
+
+footer .container .sec h4 {
     position: relative;
     color: #333;
     font-weight: 600;
-    padding: 25px 0 0 ;
+    padding: 25px 0 0;
     margin-bottom: 15px;
 }
 
-footer .container .quicklinks{
+footer .container .quicklinks {
     position: relative;
 }
-footer .container .quicklinks ul li{
+
+footer .container .quicklinks ul li {
     list-style: none;
 }
-footer .container .quicklinks ul li a{
+
+footer .container .quicklinks ul li a {
     color: #555;
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
 }
-footer .container .quicklinks p{
+
+footer .container .quicklinks p {
     color: #555;
 }
-.footer-container{
 
-    margin: 25px  60px;
+.footer-container {
+
+    margin: 25px 60px;
 }
+
 footer .container .sci {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(4,50px);
+    grid-template-columns: repeat(4, 50px);
 }
-footer .container .sci{
+
+footer .container .sci {
     list-style: none;
 }
-footer .container .sci a{
+
+footer .container .sci a {
     display: inline-block;
     width: 36px;
     height: 36px;
@@ -671,14 +697,16 @@ footer .container .sci a{
     justify-content: center;
     text-decoration: none;
 }
-footer .container .sci a i{
+
+footer .container .sci a i {
     color: #fff;
     font-size: 20px;
 }
+
 .sci .bx:hover {
     color: #857c7c;
     transition: 0.3s all linear;
-} 
+}
 
 /* .social {
     display: flex;
@@ -801,6 +829,7 @@ footer .container .sci a i{
     .section-track_record {
         padding-bottom: 50px;
     }
+
     .section-track_record .content-wrapper {
         width: auto;
         max-width: none;
@@ -819,7 +848,7 @@ footer .container .sci a i{
     .services .row .contentWrapper {
         padding-left: 0px;
     }
-    
+
 }
 
 @media (max-width:799px) {
@@ -867,50 +896,50 @@ footer .container .sci a i{
     }
 
     /* project */
- 
+
 }
 
-    @media(max-width: 575px) {
-        .section-p1 {
-            padding: 20px;
-        }
-
-        #header {
-            padding: 10px 30px;
-        }
-
-        h1 {
-            font-size: 38px;
-        }
-
-        h2 {
-            font-size: 32px;
-        }
-
-        .heading {
-            font-size: 3rem;
-        }
-
-        /*  about */
-
-        .about .row {
-            width: 90%;
-        }
-
-        .about .row .contentWrapper h2 {
-            font-size: 25px;
-        }
-
-        .about .row .contentWrapper p {
-            font-size: 15px;
-            line-height: 22px;
-        }
-
-        /* project */
-    
-
-        /* footer */
-        footer .copyright {
-            text-align: start;
-        }
+@media(max-width: 575px) {
+    .section-p1 {
+        padding: 20px;
     }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    /*  about */
+
+    .about .row {
+        width: 90%;
+    }
+
+    .about .row .contentWrapper h2 {
+        font-size: 25px;
+    }
+
+    .about .row .contentWrapper p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    /* project */
+
+
+    /* footer */
+    footer .copyright {
+        text-align: start;
+    }
+}
