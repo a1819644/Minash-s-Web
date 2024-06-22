@@ -506,13 +506,23 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     justify-content: center;
     gap: 1.5rem;
+    background-color: #000;
+        background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 100% 100%;
 }
 
 .post-box {
     background: var(--bg-color);
-    box-shadow: 0 4px 14px hsl(355deg 25% 15%/10%);
+    box-shadow: 0 4px 14px hsla(190, 29%, 80%, 0.1);
     padding: 25px;
     border-radius: 0.5rem;
+    background-color: #87bee3;
+        background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 100% 100%;
 }
 
 .post-img {
