@@ -371,7 +371,7 @@ footer .container .sci a i {
 
 @media (max-width: 1040px) {
     header {
-        padding: 12px 100px;
+        padding: 5px 65px;
     }
 
     section {
@@ -419,7 +419,7 @@ footer .container .sci a i {
     }
 
     .menu-btn {
-        background: url(/Minash-s-Web/images/menu.png)no-repeat;
+        background: url(/images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -430,7 +430,7 @@ footer .container .sci a i {
 
     .menu-btn.active {
         z-index: 999;
-        background: url(/Minash-s-Web/images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
+        background: url(/images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: center;
         transition: 0.3s ease;
     }
@@ -464,22 +464,6 @@ footer .container .sci a i {
         padding: 40px 40px;
     }
 
-    #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: #E3E6F3;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-        padding: 80px 0 0 10px;
-        transition: 0.3s;
-    }
-
     #navbar.active {
         right: 0px;
     }
@@ -487,6 +471,7 @@ footer .container .sci a i {
     #navbar li {
         margin-bottom: 25px;
     }
+
     .section-top .back-to-listing {
         margin-top: -10px;
         margin-bottom: 40px;
