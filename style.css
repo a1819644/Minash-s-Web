@@ -14,7 +14,9 @@ h2 {
     line-height: 54px;
     color: #222;
 }
-h3,h4 {
+
+h3,
+h4 {
     margin: 0 0 25px;
     font-weight: 400;
     font-family: Canela, Georgia, serif;
@@ -75,16 +77,19 @@ header #logo {
     display: block;
     margin-right: auto;
 }
- a {
+
+a {
     color: #475569;
     text-decoration: none;
     transition: color .25s ease 0s;
 }
+
 header .img {
     max-width: 100px;
     vertical-align: top;
 }
-.bgColor{
+
+.bgColor {
     height: 82px;
     background: #aaadaf;
     transition: all 1s;
@@ -436,10 +441,12 @@ section {
 }
 
 .caption {
-    text-align:initial;
+    text-align: initial;
     margin-top: 10px;
-    color: #333; /* Adjust text color */
-    font-size: 14px; /* Adjust font size */
+    color: #333;
+    /* Adjust text color */
+    font-size: 14px;
+    /* Adjust font size */
 }
 
 /* service */
@@ -745,7 +752,7 @@ footer .container .sci a i {
 
 @media (max-width: 1040px) {
     header {
-        padding: 5px 65px;
+        padding: 12px 100px;
     }
 
     section {
@@ -780,16 +787,19 @@ footer .container .sci a i {
     }
 
     header .navigation .navigation-items {
-        background: #fff;
-        width: 600px;
-        max-width: 600px;
+        width: 700px;
         margin: 20px;
         padding: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         border-radius: 5px;
-        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        height: 100vh;
     }
 
     .menu-btn {
@@ -807,9 +817,11 @@ footer .container .sci a i {
         background: url(images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: center;
         transition: 0.3s ease;
+        margin-right: 100px;
+
     }
 
-    
+
     /* services */
 
 
