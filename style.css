@@ -250,9 +250,13 @@ section {
 
 
 .section-track_record {
+    max-width: 100%;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(211, 205, 205, 0.1);
-    background-color: rgb(78, 76, 76);
+    background-image: url("./images/portfolio/backgroundimage.png");
+    background-repeat: cover;
+    background-color: rgb(5, 5, 5);
+    height: 120vh;
+    max-height: 120vh;
     /* margin: auto; */
 }
 
@@ -326,7 +330,7 @@ section {
 }
 
 .slick-list {
-    margin: 0 -60px;
+    margin: 0 -670px 0 -750px;
     /* Negative margin to offset the slide margin */
 }
 
@@ -552,7 +556,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     justify-content: center;
     gap: 1.5rem;
-    background-color: #000;
+    background-color: #413f3f;
     background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
     background-repeat: no-repeat;
     background-position: left center;
