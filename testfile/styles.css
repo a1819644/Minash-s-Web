@@ -11,18 +11,16 @@ body {
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 100%; /* Adjust to cover entire width */
+    max-width: 100%;
     overflow: hidden;
-    height: 80%; /* Adjust as needed */
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(133, 133, 133, 0.1);
+    height: 100%;
     background-color: black;
 }
 
 .slider {
     display: flex;
     overflow: hidden;
-    width: 100%;
+    width: 200%;
     position: absolute;
     /* Ensure relative positioning for proper z-index handling */
 }
@@ -38,14 +36,15 @@ body {
 }
 
 .slide-box {
-    flex: 0 0 40%; /* Each box takes up 40% of the slider width */
+    flex: 1 1 calc(33.333% - 50px); /* Each box takes up 40% of the slider width */
     padding: 0 20px; /* Adjust spacing between slides */
     box-sizing: border-box;
-    padding-top: 100px;
-    padding-right: 30px;
+    padding-top: 200px;
+    padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 80px;  
-    height: 300px; /* Height of each slide box */
+
+    padding-left: 50px;  
+    height: 700px; /* Height of each slide box */
     position: relative; /* Ensure positioning context for captions */
 }
 
@@ -68,7 +67,7 @@ body {
     font-weight: 500;
     font-size: 13px;
     line-height: 35px;
-    color: #babaaf;
+    color: #e11919;
     z-index: 2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
