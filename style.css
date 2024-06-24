@@ -321,7 +321,7 @@ section {
 }
 
 .slick-list {
-    margin: 0 -60px;
+    margin: 0 -670px 0 -750px;
     /* Negative margin to offset the slide margin */
 }
 
@@ -545,7 +545,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     justify-content: center;
     gap: 1.5rem;
-    background-color: #000;
+    background-color: #413f3f;
     background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
     background-repeat: no-repeat;
     background-position: left center;

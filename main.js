@@ -39,7 +39,7 @@ $('.slides').slick({
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 1
             }
         },
         {
