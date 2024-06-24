@@ -8,6 +8,21 @@ const menuBtn = document.querySelector(".menu-btn");
             navigation.classList.toggle("active");
         });
     
+  //navbar background color change
+
+   function changeBg(){
+    var navbar = document.getElementById('navbar');
+    var scrollValue = window.scrollY;
+    if(scrollValue < 150){
+        navbar.classList.remove('bgColor');
+    } else{
+        navbar.classList.add('bgColor');
+    }
+   
+   }
+   window.addEventListener('scroll',changeBg);
+
+        
 //Project menu
 
 $('.slides').slick({
