@@ -10,43 +10,50 @@ const menuBtn = document.querySelector(".menu-btn");
     
 //Project menu
 
-let currentSlide = 0;
-const totalSlides = document.querySelectorAll('.slide-box').length;
-const visibleSlides = 3; // Number of slides to show at a time
+$('.slides').slick({
+    centerMode: true,
+    slidesToShow: 3,
+    arrows: false, /*removed the arrow*/
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerPadding: '0px',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
 
-function showSlide(index) {
-    currentSlide = (index + totalSlides) % totalSlides;
-
-    // Calculate the transform value based on currentSlide and visibleSlides
-    const transformValue = -currentSlide * (100 / visibleSlides);
-    document.querySelector('.slides').style.transform = `translateX(${transformValue}%)`;
-
-    // Update button visibility
-    updateButtonVisibility();
-}
-
-function showNextSlide() {
-    showSlide(currentSlide + 1);
-}
-
-function showPrevSlide() {
-    showSlide(currentSlide - 1);
-}
-
-function updateButtonVisibility() {
-    const prevButton = document.querySelector('.nav.prev');
-    const nextButton = document.querySelector('.nav.next');
-
-    // Show or hide previous and next buttons based on currentSlide
-    prevButton.style.visibility = 'visible'; // Show previous button otherwise
-    nextButton.style.visibility = 'visible'; // Show next button otherwise
-    
-}
-
-// Optional: Automatic slideshow
-// setInterval(showNextSlide, 3000); // Uncomment to enable automatic slideshow
-
-// Initial update of button visibility
-updateButtonVisibility();
 
 //Service menu
+
+document.querySelectorAll('.content li').forEach(item => {
+    item.addEventListener('mouseover', event => {
+        const newSrc = event.target.getAttribute('data-img');
+        document.getElementById('mainImage').setAttribute('src', newSrc);
+    });
+
+    item.addEventListener('mouseout', () => {
+        document.getElementById('mainImage').setAttribute('src', defaultSrc);
+    });
+});
+
+document.getElementById('mainImage').addEventListener('click', () => {
+    const defaultSrc = document.getElementById('mainImage').getAttribute('data-default');
+    document.getElementById('mainImage').setAttribute('src', 'images/Service/Framing.jpg');
+})
