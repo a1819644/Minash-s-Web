@@ -23,6 +23,7 @@ h4 {
 }
 body,html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 header {
     z-index: 999;
@@ -257,7 +258,8 @@ section {
     background-image: url("./images/portfolio/backgroundimage.png");
     background-repeat: cover;
     background-color: rgb(5, 5, 5);
-    height: 120vh;
+    background-size: cover;
+    /* height: 120vh; */
     max-height: 120vh;
     /* margin: auto; */
     margin-top: 20px;
@@ -328,12 +330,14 @@ section {
 
 .slick-slide {
     margin: 0 60px;
+
     /* Adjust this value to change the horizontal space between slides */
 
 }
 
 .slick-list {
     margin: 0 -670px 0 -750px;
+    overflow: hidden;
     /* Negative margin to offset the slide margin */
 }
 
@@ -830,8 +834,16 @@ footer .container .sci a i {
     }
 
     /* portfolio */
-    section.portfolio {
+    /* section.portfolio {
         padding: 100px 20px;
+    } */
+
+    .slide {
+        padding: 0 40px 65px;
+    }
+        
+    .section-track_record {
+        padding: 50px 20px;
     }
 
     /* services */
