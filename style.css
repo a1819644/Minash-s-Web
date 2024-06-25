@@ -3,8 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    top: 0;
-    left: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
@@ -21,9 +19,13 @@ h4 {
     font-weight: 400;
     font-family: Canela, Georgia, serif;
 }
-body,html{
+
+body,
+html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
 header {
     z-index: 999;
     position: absolute;
@@ -257,7 +259,7 @@ section {
     background-image: url("./images/portfolio/backgroundimage.png");
     background-repeat: cover;
     background-color: rgb(5, 5, 5);
-    height: 120vh;
+    /* height: 120vh; */
     max-height: 120vh;
     /* margin: auto; */
     margin-top: 20px;
@@ -681,7 +683,7 @@ footer .container {
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap: 20px;
     padding: 50px;
-    margin: auto 47px auto 65px;
+    margin: auto 47px auto 20px;
 }
 
 footer .container .sec h4 {
@@ -871,11 +873,11 @@ footer .container .sci a i {
         margin-bottom: 30px;
     }
 
-     .slider .slides {
+    .slider .slides {
         padding-left: 40px;
         padding-right: 40px;
     }
-    
+
     /* service */
 
     .services .row {
@@ -931,6 +933,10 @@ footer .container .sci a i {
         padding: 20px;
     }
 
+    header {
+        padding: 10px 10px;
+    }
+
     #header {
         padding: 10px 30px;
     }
@@ -945,6 +951,12 @@ footer .container .sci a i {
 
     .heading {
         font-size: 3rem;
+    }
+
+
+    .menu-btn.active {
+        margin-right: 140px;
+        margin-top: 50px;
     }
 
     /*  about */
@@ -968,5 +980,12 @@ footer .container .sci a i {
     /* footer */
     footer .copyright {
         text-align: start;
+    }
+}
+
+@media (min-width: 370px) {
+    .home .content h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
     }
 }
