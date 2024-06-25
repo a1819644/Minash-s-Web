@@ -827,7 +827,8 @@ footer .container .sci a i {
         background: url(images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: center;
         transition: 0.3s ease;
-        margin-right: 100px;
+        margin-right: 350px;
+        padding-top: 20px;
 
     }
 
@@ -905,6 +906,10 @@ footer .container .sci a i {
         margin-bottom: 25px;
     }
 
+    .menu-btn.active {
+        margin-right: 240px;
+        padding-top: 20px;
+    }
     /*  about */
 
     .about .row {
@@ -959,6 +964,10 @@ footer .container .sci a i {
         margin-top: 50px;
     }
 
+    .menu-btn.active {
+        margin-right: 220px;
+        padding-top: 20px;
+    }
     /*  about */
 
     .about .row {
