@@ -21,7 +21,9 @@ h4 {
     font-weight: 400;
     font-family: Canela, Georgia, serif;
 }
-
+body,html{
+    scroll-behavior: smooth;
+}
 header {
     z-index: 999;
     position: absolute;
@@ -258,6 +260,7 @@ section {
     height: 120vh;
     max-height: 120vh;
     /* margin: auto; */
+    margin-top: 20px;
 }
 
 /* title and subtitle */
@@ -549,6 +552,7 @@ section {
 #blogs {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .post-container {
@@ -825,6 +829,10 @@ footer .container .sci a i {
 
     }
 
+    /* portfolio */
+    section.portfolio {
+        padding: 100px 20px;
+    }
 
     /* services */
 
@@ -835,6 +843,7 @@ footer .container .sci a i {
     }
 
 }
+
 
 @media (max-width:900px) {
     /*  about */
@@ -862,6 +871,11 @@ footer .container .sci a i {
         margin-bottom: 30px;
     }
 
+     .slider .slides {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
     /* service */
 
     .services .row {
@@ -905,7 +919,11 @@ footer .container .sci a i {
     }
 
     /* porfolio */
-
+    .slider .slides {
+        padding-left: 40px;
+        padding-right: 40px;
+        left: 80px;
+    }
 }
 
 @media(max-width: 575px) {

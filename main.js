@@ -1,28 +1,29 @@
 // header
 const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
+const navigation = document.querySelector(".navigation");
 
 
-        menuBtn.addEventListener("click",() => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
-    
-  //navbar background color change
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+});
 
-   function changeBg(){
+//navbar background color change
+
+function changeBg() {
     var navbar = document.getElementById('navbar');
     var scrollValue = window.scrollY;
-    if(scrollValue < 150){
+    if (scrollValue < 150) {
         navbar.classList.remove('bgColor');
-    } else{
+    } else {
         navbar.classList.add('bgColor');
     }
-   
-   }
-   window.addEventListener('scroll',changeBg);
 
-        
+}
+window.addEventListener('scroll', changeBg);
+
+
+
 //Project menu
 
 $('.slides').slick({
