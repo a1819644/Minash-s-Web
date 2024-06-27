@@ -3,8 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    top: 0;
-    left: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
@@ -21,10 +19,13 @@ h4 {
     font-weight: 400;
     font-family: Canela, Georgia, serif;
 }
-body,html{
+
+body,
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 header {
     z-index: 999;
     position: absolute;
@@ -258,7 +259,6 @@ section {
     background-image: url("./images/portfolio/backgroundimage.png");
     background-repeat: cover;
     background-color: rgb(5, 5, 5);
-    background-size: cover;
     /* height: 120vh; */
     max-height: 120vh;
     /* margin: auto; */
@@ -685,7 +685,7 @@ footer .container {
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap: 20px;
     padding: 50px;
-    margin: auto 47px auto 65px;
+    margin: auto 47px auto 20px;
 }
 
 footer .container .sec h4 {
@@ -829,7 +829,8 @@ footer .container .sci a i {
         background: url(images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: center;
         transition: 0.3s ease;
-        margin-right: 100px;
+        margin-right: 350px;
+        padding-top: 20px;
 
     }
 
@@ -883,11 +884,11 @@ footer .container .sci a i {
         margin-bottom: 30px;
     }
 
-     .slider .slides {
+    .slider .slides {
         padding-left: 40px;
         padding-right: 40px;
     }
-    
+
     /* service */
 
     .services .row {
@@ -915,6 +916,10 @@ footer .container .sci a i {
         margin-bottom: 25px;
     }
 
+    .menu-btn.active {
+        margin-right: 240px;
+        padding-top: 20px;
+    }
     /*  about */
 
     .about .row {
@@ -943,6 +948,10 @@ footer .container .sci a i {
         padding: 20px;
     }
 
+    header {
+        padding: 10px 10px;
+    }
+
     #header {
         padding: 10px 30px;
     }
@@ -959,6 +968,16 @@ footer .container .sci a i {
         font-size: 3rem;
     }
 
+
+    .menu-btn.active {
+        margin-right: 140px;
+        margin-top: 50px;
+    }
+
+    .menu-btn.active {
+        margin-right: 220px;
+        padding-top: 20px;
+    }
     /*  about */
 
     .about .row {
@@ -980,5 +999,12 @@ footer .container .sci a i {
     /* footer */
     footer .copyright {
         text-align: start;
+    }
+}
+
+@media (min-width: 370px) {
+    .home .content h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
     }
 }
