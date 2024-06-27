@@ -1,42 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>  
+    <title>My Now Amazing Webpage</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Slider</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    </head>
+    <body>
 
-<body>
-    <div class="slider-container">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('./images/image1.jpg');"></div>
-                    <div class="caption">Caption for Image 1</div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('./images/image2.jpg');"></div>
-                    <div class="caption">Caption for Image 2</div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('./images/image3.jpg');"></div>
-                    <div class="caption">Caption for Image 3</div>
-                </div>
-                <div class="slide-box">
-                    <div class="slide" style="background-image: url('./images/image4.jpg');"></div>
-                    <div class="caption">Caption for Image 4</div>
-                </div>
-                <!-- Add more images with captions -->
-            </div>
-        </div>
-        <div class="buttons">
-            <span class="prev" onclick="showPrevSlide()"></span>
-            <span class="next" onclick="showNextSlide()"></span>
-        </div>
+    <div class="slick-carousel">
+        <img src="../images/portfolio/image1.jpg">
+        <img src="../images/portfolio/image2.jpg">
+        <img src="../images/portfolio/image3.jpg">
     </div>
-    <script src="script.js"></script>
-</body>
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>
