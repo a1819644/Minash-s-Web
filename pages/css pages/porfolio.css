@@ -475,12 +475,7 @@ footer .container .sci a i {
         width: auto;
         max-width: none;
     }
-
-    /* blog */
-
-    body.single-property .section-top .title-content {
-        padding-top: 20px;
-    }
+  
 
     /* footer */
 
@@ -549,6 +544,12 @@ footer .container .sci a i {
         margin-right: 240px;
         padding-top: 20px;
     }
+    .grid-item img {
+        max-width: 80%;
+        vertical-align: top;
+        height: 80%;
+    }
+
 }
 
 @media(max-width: 575px) {
