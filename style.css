@@ -458,6 +458,85 @@ section {
     /* Adjust font size */
 }
 
+
+/* image slider */
+#main {
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.section-portfolio {
+    position: relative;
+    width: 100%;
+    margin-top: 35px;
+}
+a {
+    color: #475569;
+    text-decoration: none;
+    transition: color .25s ease 0s;
+}
+.section-portfolio .portfolio-items>a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #fff;
+}
+.section-portfolio .portfolio-items .portfolio-type {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.section-portfolio .portfolio-items .portfolio-type .type {
+    position: absolute;
+    left: 6.3%;
+    bottom: 5.72%;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 1;
+    font-family: Canela, Georgia, serif;
+    transform-origin: left bottom;
+    transform: rotate(-90deg) translateY(100%);
+}
+.section-portfolio .portfolio-items .portfolio-type .copy {
+    position: absolute;
+    right: 50px;
+    bottom: 98px;
+    width: 182px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: .01em;
+    transition: opacity .5s ease 0s, transform 1s ease 0s;
+    transform: translateY(300%);
+    opacity: 0;
+    color: #fff;
+    z-index: 1;
+}
+.section-portfolio .portfolio-items .portfolio-type:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+}
+.section-portfolio .portfolio-items .portfolio-type img {
+    display: block;
+    width: auto;
+    max-width: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1.1);
+    transition: transform 1s ease .5s;
+}
+
+
 /* service */
 .services {
     min-height: 10vh;
@@ -760,13 +839,50 @@ footer .container .sci a i {
     word-wrap: break-word
 }
 
+@media screen and (max-width: 860px) {
+    .section-portfolio {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-portfolio .portfolio-items a {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+    }
+    .section-portfolio .portfolio-items .portfolio-type {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .section-portfolio .portfolio-items .portfolio-type .type {
+        font-size: 50px;
+    }
+    .section-portfolio .portfolio-items .portfolio-type .copy {
+        width: 162px;
+        transform: none;
+        opacity: 1;
+        right: 20px;
+        bottom: 5.72%;
+        font-size: 14px;
+    }
+    .section-portfolio .portfolio-items .portfolio-type .copy {
+        width: 162px;
+        transform: none;
+        opacity: 1;
+        right: 20px;
+        bottom: 5.72%;
+        font-size: 14px;
+    }
+}
 @media (max-width: 1040px) {
     header {
         padding: 12px 100px;
     }
 
     section {
-        padding: 100px 20px;
+        padding: 0 20px;
     }
 
     header .navigation {
@@ -876,6 +992,7 @@ footer .container .sci a i {
         padding-right: 40px;
     }
 
+    
     /* service */
 
     .services .row {
@@ -951,6 +1068,9 @@ footer .container .sci a i {
         align-items: center;
         cursor: pointer;
     }
+
+   
+    
 }
 
 @media(max-width: 575px) {
@@ -1032,10 +1152,46 @@ footer .container .sci a i {
     }
 }
 
+
+
 @media (min-width: 370px) {
     .home .content h1 {
         font-size: 3rem;
         letter-spacing: 3px;
     }
     
+}
+@media screen and (min-width: 861px) {
+    .section-portfolio {
+        height: 0;
+        padding-bottom: calc(5 / 12* 100%);
+    }
+    .section-portfolio .portfolio-items {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-portfolio .portfolio-items a {
+        padding-right: 5px !important;
+        padding-left: 0 !important;
+    }
+
+    .section-portfolio .portfolio-items>a {
+        width: 50%;
+        height: 100%;
+        will-change: width;
+        transition: width 1s ease 0s;
+    }
+    .section-portfolio .portfolio-items>a:hover {
+        width: 175%;
+    }
+    .section-portfolio .portfolio-items>a:hover .copy {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.8s;
+    }
 }
