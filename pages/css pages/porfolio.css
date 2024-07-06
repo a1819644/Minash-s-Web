@@ -62,7 +62,7 @@ header {
     padding: 12px 100px;
     transition: 0.5s ease;
     height: 100px;
-    background: #fff;
+    background: #333;
     z-index: 100;
     position: fixed;
 }

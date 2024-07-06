@@ -765,7 +765,7 @@ footer .container {
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap: 20px;
     padding: 50px;
-    margin: auto 47px auto 20px;
+    margin: auto 250px;
 }
 
 footer .container .sec h4 {
@@ -789,10 +789,6 @@ footer .container .quicklinks ul li a {
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
-}
-
-footer .container .quicklinks p {
-    color: #555;
 }
 
 
@@ -946,7 +942,7 @@ footer .container .sci a i {
         background: url(images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: center;
         transition: 0.3s ease;
-        margin-right: 350px;
+        margin-right: 80px;
         padding-top: 20px;
 
     }
@@ -954,24 +950,15 @@ footer .container .sci a i {
     /* bologs */
   
     /* portfolio */
-    /* section.portfolio {
-        padding: 100px 20px;
-    } */
 
-    .slide {
-        padding: 0 40px 65px;
-    }
-        
-    .section-track_record {
-        padding: 50px 20px;
-    }
 
     /* services */
 
 
     footer .container {
-        display: block;
-        margin: 25px 60px;
+        display: grid;
+        margin: auto 180px;
+        position: relative;
     }
 
 }
@@ -1015,6 +1002,13 @@ footer .container .sci a i {
         padding-left: 0px;
     }
 
+    
+    footer .container {
+        display: block;
+        margin: auto;
+    }
+
+
 }
 
 @media (max-width:799px) {
@@ -1032,7 +1026,7 @@ footer .container .sci a i {
     }
 
     .menu-btn.active {
-        margin-right: 240px;
+        margin-right: 0px;
         padding-top: 20px;
     }
     /*  about */
@@ -1094,12 +1088,15 @@ footer .container .sci a i {
         padding: 10px 30px;
     }
 
-    h1 {
+    .home .content h1 {
         font-size: 38px;
+        margin-bottom: 30px;
+        line-height: 55px;
     }
 
     h2 {
         font-size: 32px;
+        line-height: 40px;
     }
 
     .heading {
@@ -1133,26 +1130,6 @@ footer .container .sci a i {
 
     /* porfolio */
 
-    .slider .slides {
-        padding-left: 40px;
-        padding-right: 40px;
-        left: 120px;
-    }
-    .caption {
-        text-align: center !important;
-        color: #d9d9d9 !important;
-        font-size: 16px !important;
-        bottom: 0 !important;
-        padding-top: 20px;
-        /* box-sizing: border-box !important; */
-        /* margin: 0 200px; */
-        /* height: 65px; */
-        /* overflow: hidden; */
-        /* font-weight: 400; */
-        /* line-height: 35px; */
-        /* letter-spacing: .02em; */
-        padding-right: 31%;
-    }
 
     /* footer */
     footer .copyright {
