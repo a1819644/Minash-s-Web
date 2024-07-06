@@ -640,7 +640,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
     background-color: #413f3f;
     background-image: url("https://www.newwestbc.com/wp-content/themes/new-west/images/track-record-bg.png");
     background-repeat: no-repeat;
@@ -882,7 +882,7 @@ footer .container .sci a i {
     }
 
     section {
-        padding: 0 20px;
+        padding: 20px;
     }
 
     header .navigation {
@@ -948,6 +948,8 @@ footer .container .sci a i {
 
     }
 
+    /* bologs */
+  
     /* portfolio */
     section.portfolio {
         padding: 100px 20px;
@@ -963,7 +965,6 @@ footer .container .sci a i {
 
 }
 
-
 @media (max-width:900px) {
     /*  about */
 
@@ -977,7 +978,6 @@ footer .container .sci a i {
     }
 
     /* porfolio */
-
 
     .section-track_record .content-wrapper {
         width: auto;
@@ -1068,9 +1068,6 @@ footer .container .sci a i {
         align-items: center;
         cursor: pointer;
     }
-
-   
-    
 }
 
 @media(max-width: 575px) {
@@ -1152,8 +1149,6 @@ footer .container .sci a i {
     }
 }
 
-
-
 @media (min-width: 370px) {
     .home .content h1 {
         font-size: 3rem;
@@ -1161,10 +1156,11 @@ footer .container .sci a i {
     }
     
 }
+
 @media screen and (min-width: 861px) {
     .section-portfolio {
         height: 0;
-        padding-bottom: calc(5 / 12* 100%);
+        padding-bottom: calc(7 / 12* 100%);
     }
     .section-portfolio .portfolio-items {
         position: absolute;
