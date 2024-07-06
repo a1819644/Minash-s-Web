@@ -89,13 +89,14 @@ a {
 }
 
 header .img {
+    width: 90px;
     max-width: 100px;
     vertical-align: top;
 }
 
 .bgColor {
     height: 82px;
-    background: #aaadaf;
+    background: #000000;
     transition: all 1s;
 }
 
