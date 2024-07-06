@@ -89,13 +89,14 @@ a {
 }
 
 header .img {
+    width: 90px;
     max-width: 100px;
     vertical-align: top;
 }
 
 .bgColor {
     height: 82px;
-    background: #aaadaf;
+    background: #000000;
     transition: all 1s;
 }
 
@@ -330,12 +331,14 @@ section {
 
 .slick-slide {
     margin: 0 60px;
+
     /* Adjust this value to change the horizontal space between slides */
 
 }
 
 .slick-list {
     margin: 0 -670px 0 -750px;
+    overflow: hidden;
     /* Negative margin to offset the slide margin */
 }
 
@@ -951,8 +954,16 @@ footer .container .sci a i {
     /* bologs */
   
     /* portfolio */
-    section.portfolio {
+    /* section.portfolio {
         padding: 100px 20px;
+    } */
+
+    .slide {
+        padding: 0 40px 65px;
+    }
+        
+    .section-track_record {
+        padding: 50px 20px;
     }
 
     /* services */
