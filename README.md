@@ -1,5 +1,5 @@
 # Welcome to this repo
-One of my clients, Who runs a Carpentry Business, ordered this website. We decided to keep things simple and easy to navigate.
+One of my clients, The "Minash's Web" GitHub repository is designed for a carpentry business website. It features an index.html file as the main webpage, accompanied by main.js and style.css for functionality and styling. The site likely includes sections for services, a gallery, contact information, and possibly a blog or testimonials. The focus is on simplicity and ease of navigation.
 
 ## Run
 To run this website, locate the index.html file and open it on any web browser. 
