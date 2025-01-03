@@ -95,7 +95,7 @@ header .img {
 }
 
 .bgColor {
-    height: 82px;
+    height: 100px;
     background: #000000;
     transition: all 1s;
 }
@@ -928,7 +928,7 @@ footer .container .sci a i {
     }
 
     .menu-btn {
-        background: url(images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
+        background: url(images/menu/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -939,7 +939,7 @@ footer .container .sci a i {
 
     .menu-btn.active {
         z-index: 999;
-        background: url(images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
+        background: url(images/menu/close_24dp_FILL0_wght400_GRAD0_opsz24.svg)no-repeat;
         background-size: center;
         transition: 0.3s ease;
         margin-right: 80px;
